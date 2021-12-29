@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background-color: wheat;
+    position: relative;
+}
+
+header{
+    background-image: url(img/header.jpeg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 40%;
+    box-shadow: 0 0 5px black;
+    border: 5px;
+}
+
+p{
+    text-align: center;
+}
+
+#start-game{
+    display: block;
+    margin: 40px auto;
+    background-color: #4e1215;
+    border: none;
+    font-size: 30px;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 5px black;
+    font-variant: small-caps;
+    font-weight: 600px;
+}
+
+#start-game:disabled{ /*Applique un style quand disabled est sur true*/ 
+    background-color: rgba(128, 128, 128, 0.267);
+    box-shadow: none;
+}
+
+.card{
+    background-color: transparent; /*Efface le fond blanc présent de base sur les balises button*/
+    border: none;
+}
+
+#img-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 600px;
+}
+
+img{
+    width: 175px;
+    height: 275px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px black;
+}
+
+.image-marvel{
+    border: 2px solid maroon;
+    height: 270px;
+}
+
+#resultat{
+    position: absolute;
+    background-color: rgba(216, 0, 0, 0.795);
+    color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 150, 150);
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    top: 50vh;
+    left: calc(50% - 150px);
+    z-index: 10;
+}
